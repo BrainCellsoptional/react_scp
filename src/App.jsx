@@ -21,12 +21,8 @@ function App() {
           </div>
           <div className="col-md-4 col-12 my-2">
             <img
-              src={
-                selectedSCP
-                  ? `${import.meta.env.BASE_URL}${"l-03-5-1-1200x675.webp"}`
-                  : ""
-              }
-              alt={selectedSCP?.item || ""}
+              src={`${import.meta.env.BASE_URL}l-03-5-1-1200x675.webp`}
+              alt="Background"
               className="img-fluid rounded border border-dark border-4"
               style={{ maxHeight: "50vh", width: "100%", objectFit: "cover" }}
             />

@@ -30,8 +30,35 @@ function App() {
           {/* Default container: disappears when an SCP is selected */}
           {!selectedSCP && (
             <div className="col-12 my-2 p-4 border rounded bg-light">
-              <h3>Welcome to the SCP React Application</h3>
-              <p>Please select an SCP from the menu to view its information.</p>
+              <h1>About The SCP Foundation</h1>
+              <div className="text-start">
+              <h3>
+                Mankind in its present state has been around for a quarter of a
+                million years, yet only a small fraction of that has been of any
+                significance.
+              </h3>
+              <p>
+                So, what did we do for nearly 250,000 years? We huddled in caves
+                and around small fires, fearful of the things that we didn't
+                understand. It was more than explaining why the sun came up, it
+                was the mystery of enormous birds with heads of men and rocks
+                that came to life. So we called them "gods" and "demons", begged
+                them to spare us, and prayed for salvation. In time, their
+                numbers dwindled and ours rose. The world began to make more
+                sense when there were fewer things to fear, yet the unexplained
+                can never truly go away, as if the universe demands the absurd
+                and impossible.
+              </p>
+              <p>
+                <strong>Mankind must not go back to hiding in fear. </strong>No
+                one else will protect us, and we must stand up for ourselves.
+                While the rest of mankind dwells in the light, we must stand in
+                the darkness to fight it, contain it, and shield it from the
+                eyes of the public, so that others may live in a sane and normal
+                world.
+              </p>
+              <h3>We secure. We contain. We protect. — The Administrator</h3>
+            </div>
             </div>
           )}
           {selectedSCP && <SCP selectedSCP={selectedSCP} />}

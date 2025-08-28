@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Menu.css";
 
-{/*SCP Menu Item Componet*/}
+{
+  /*SCP Menu Item Componet*/
+}
 function Menu({ scps, onSelect }) {
   return (
     /*The SCP Links are put in a container and then grid themselves to fill the space*/
@@ -26,4 +28,3 @@ function Menu({ scps, onSelect }) {
 }
 
 export default Menu;
-

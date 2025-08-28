@@ -2,6 +2,6 @@
 .menu-item:hover {
   background-color: #0d6efd; /* Bootstrap primary blue */
   color: white;
-  transform: scale(1.10);
+  transform: scale(1.1);
   transition: 0.2s;
 }

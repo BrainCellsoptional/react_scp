@@ -23,7 +23,7 @@ function App() {
             <img
               src={
                 selectedSCP
-                  ? `${import.meta.env.BASE_URL}${selectedSCP.image}`
+                  ? `${import.meta.env.BASE_URL}${"l-03-5-1-1200x675.webp"}`
                   : ""
               }
               alt={selectedSCP?.item || ""}

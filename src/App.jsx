@@ -27,6 +27,13 @@ function App() {
               style={{ maxHeight: "50vh", width: "100%", objectFit: "cover" }}
             />
           </div>
+          {/* Default container: disappears when an SCP is selected */}
+          {!selectedSCP && (
+            <div className="col-12 my-2 p-4 border rounded bg-light">
+              <h3>Welcome to the SCP React Application</h3>
+              <p>Please select an SCP from the menu to view its information.</p>
+            </div>
+          )}
           {selectedSCP && <SCP selectedSCP={selectedSCP} />}
         </div>
       </div>

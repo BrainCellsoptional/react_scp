@@ -30,14 +30,15 @@ function App() {
           {/* Default container: disappears when an SCP is selected */}
           {!selectedSCP && (
             <div className="col-12 my-2 p-4 border rounded bg-light">
-              <h1>About The SCP Foundation</h1>
+              <h1 className="text-danger">About The SCP Foundation</h1>
               <div className="text-start">
-              <h3>
+              <h3 className="fw-bold">
                 Mankind in its present state has been around for a quarter of a
                 million years, yet only a small fraction of that has been of any
                 significance.
               </h3>
               <p>
+                <br></br>
                 So, what did we do for nearly 250,000 years? We huddled in caves
                 and around small fires, fearful of the things that we didn't
                 understand. It was more than explaining why the sun came up, it
@@ -57,7 +58,7 @@ function App() {
                 eyes of the public, so that others may live in a sane and normal
                 world.
               </p>
-              <h3>We secure. We contain. We protect. — The Administrator</h3>
+              <h3 className="text-danger">We secure. We contain. We protect. — <strong className="text-dark">The Administrator</strong></h3>
             </div>
             </div>
           )}

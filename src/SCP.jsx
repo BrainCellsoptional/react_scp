@@ -6,8 +6,8 @@ function SCP({ selectedSCP }) {
   return (
     <div className="container my-3 text-start">
       {/* SCP Item & Class */}
-      <h2>{selectedSCP.item}</h2>
-      <h3>{selectedSCP.class}</h3>
+      <h2 className="fw-bold">{selectedSCP.item}</h2>
+      <h3 className="fw-bold">{selectedSCP.class}</h3>
 
       {/* Image + Containment */}
       <div className="row mb-3">

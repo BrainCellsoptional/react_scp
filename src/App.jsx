@@ -20,14 +20,16 @@ function App() {
             </div>
           </div>
           <div className="col-md-4 col-12 my-2">
-            {selectedSCP?.image && (
-              <img
-                src={`${import.meta.env.BASE_URL}${selectedSCP.image}`}
-                alt={selectedSCP.item}
-                className="img-fluid rounded border border-dark border-4"
-                style={{ maxHeight: "50vh", width: "100%", objectFit: "cover" }}
-              />
-            )}
+            <img
+              src={
+                selectedSCP
+                  ? `${import.meta.env.BASE_URL}${selectedSCP.image}`
+                  : ""
+              }
+              alt={selectedSCP?.item || ""}
+              className="img-fluid rounded border border-dark border-4"
+              style={{ maxHeight: "50vh", width: "100%", objectFit: "cover" }}
+            />
           </div>
           {selectedSCP && <SCP selectedSCP={selectedSCP} />}
         </div>
